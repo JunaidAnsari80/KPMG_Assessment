@@ -1,0 +1,64 @@
+﻿@model PaginatedList<TransactionModel>
+
+
+<div class="container">
+    <div class="row">
+        <h3>Transactions</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table-responsive table">
+                <thead>
+                    <tr>
+                        <th>Account</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Currency Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Count > 0)
+                    {
+                        foreach (var transaction in Model)
+                        {
+                            <tr>
+                                <td>@transaction.account</td>
+                                <td>@transaction.amount</td>
+                                <td>@transaction.description</td>
+                                <td>@transaction.currencyCode</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td>
+                                No Data Found
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    @{
+        var prevDisabled = Model.PageIndex<=1 ? "disabled" : "";
+        var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+        var next = Model.PageIndex + 1;
+        var previous = Model.PageIndex - 1;
+    }
+
+   
+    <a onclick="ShowTransactions(@previous)"                  
+       class="btn btn-default @prevDisabled">
+        Previous
+    </a>
+    <a onclick="ShowTransactions(@next)"      
+       class="btn btn-default @nextDisabled">
+        Next
+    </a>
+</div>
+

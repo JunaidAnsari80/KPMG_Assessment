@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPMG_Assessment.Website", "KPMG_Assessment.Website\KPMG_Assessment.Website.csproj", "{63FC8A6B-169A-43B4-B1AB-7414C3546677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPMG_Assesment.Tests", "KPMG_Assesment.Tests\KPMG_Assesment.Tests.csproj", "{DD2AD23B-365C-4D26-9CD1-1CA0A6E28E7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63FC8A6B-169A-43B4-B1AB-7414C3546677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63FC8A6B-169A-43B4-B1AB-7414C3546677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63FC8A6B-169A-43B4-B1AB-7414C3546677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63FC8A6B-169A-43B4-B1AB-7414C3546677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD2AD23B-365C-4D26-9CD1-1CA0A6E28E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2AD23B-365C-4D26-9CD1-1CA0A6E28E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2AD23B-365C-4D26-9CD1-1CA0A6E28E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2AD23B-365C-4D26-9CD1-1CA0A6E28E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1953AB6C-D8CF-453E-BFF1-7AF55F8AE59A}
+	EndGlobalSection
+EndGlobal
